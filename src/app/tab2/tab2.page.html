@@ -6,4 +6,19 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+            CLIENTES 
+        </ion-list-header>
+        <ion-item *ngFor="let client of clients">
+            <ion-avatar slot="start">
+            <img src="https://image.flaticon.com/icons/svg/265/265668.svg">
+            </ion-avatar>
+            <ion-label>
+            <h2>Nombre: {{client.nombre_completo}}</h2>
+            <span>Telefono: {{client.telefono}}</span>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

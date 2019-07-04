@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
+  { path: '', redirectTo:'auth',  pathMatch:'full' },
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'auth', loadChildren: './user/auth/auth.module#AuthPageModule' }
 ];
 @NgModule({
   imports: [

@@ -1,4 +1,8 @@
-.welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.font{
+  font-size: 12px !important;
 }
